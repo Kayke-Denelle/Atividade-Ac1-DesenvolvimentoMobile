@@ -70,13 +70,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
-            Button btnExercicio7 = findViewById(R.id.btnExercicio7);
-            btnExercicio7.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(MainActivity.this, Exercicio7.class);
-                    startActivity(intent);
-                }
-            });
+
     }
 }

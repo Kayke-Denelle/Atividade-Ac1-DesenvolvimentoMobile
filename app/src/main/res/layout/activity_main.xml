@@ -53,10 +53,5 @@
                     android:text="Exercício 5"
                     android:layout_marginBottom="16dp"/>
 
-                <Button
-                    android:id="@+id/btnExercicio7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Exercício 7"/>
         </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

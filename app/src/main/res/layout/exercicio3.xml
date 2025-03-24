@@ -6,25 +6,189 @@
     android:layout_height="match_parent"
     tools:context=".Exercicio3">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tela do Exercício 3"
-        android:textSize="24sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp"/>
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
-    <Button
-        android:id="@+id/btnVoltar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Voltar"
-        app:layout_constraintTop_toBottomOf="@id/textView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp"/>
+        <!-- Nome -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nome:"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu nome completo"
+            android:inputType="textPersonName"/>
+
+        <!-- Idade -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Idade:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editIdade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite sua idade"
+            android:inputType="number"/>
+
+        <!-- UF -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UF:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerUF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- Cidade -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cidade:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite sua cidade"/>
+
+        <!-- Telefone -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Telefone:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu telefone"
+            android:inputType="phone"/>
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Digite seu email"
+            android:inputType="textEmailAddress"/>
+
+        <!-- Tamanho de Roupa -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tamanho preferido:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupTamanho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P"/>
+
+            <RadioButton
+                android:id="@+id/radioM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"/>
+
+            <RadioButton
+                android:id="@+id/radioG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G"/>
+
+            <RadioButton
+                android:id="@+id/radioGG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GG"/>
+        </RadioGroup>
+
+        <!-- Cores Preferidas -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cores preferidas:"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/checkPreto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Preto"/>
+
+            <CheckBox
+                android:id="@+id/checkBranco"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Branco"/>
+
+            <CheckBox
+                android:id="@+id/checkVermelho"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vermelho"/>
+
+            <CheckBox
+                android:id="@+id/checkAzul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Azul"/>
+
+            <CheckBox
+                android:id="@+id/checkVerde"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Verde"/>
+        </LinearLayout>
+
+        <!-- Botão Cadastrar -->
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
